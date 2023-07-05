@@ -64,7 +64,34 @@
 
     <!-- HERO -->
     <div class="hero hero--homepage">
-        <img class="hero__background" src="./img/sitnica-tlo.png" alt="osrodek-sitnica" />
+        <img class="hero__background hero__background--desktop" src="./img/sitnica-tlo.png" alt="osrodek-sitnica" />
+        <img class="hero__background hero__background--mobile" src="./img/sitnica-tlo-mobile.png" alt="osrodek-sitnica" />
+
+        <div class="topBarMobile">
+            <a class="topBarMobile__item" href="tel:+48123123123">
+                <img class="img" src="./img/telefon.svg" alt="telefon" />
+                <span class="topBarMobile__item__text">
+                    Zadzwoń
+                </span>
+            </a>
+            <div class="topBarMobile__item">
+                <img class="img" src="./img/zegar.svg" alt="zegar" />
+                <span class="topBarMobile__item__text">
+                    Pon. - Czw. 9:00 - 17:00<br/>
+                    Pt. - Ndz. 9:00 - 23:00
+                </span>
+            </div>
+            <button class="topBarMobile__item" onclick="openDesktopMenu()">
+                <img class="img" src="./img/menu-biale.svg" alt="menu" />
+                <span class="topBarMobile__item__text">
+                    Menu
+                </span>
+            </button>
+        </div>
+
+        <a class="topBarMobileLogo" href="#">
+            <img class="img" src="./img/logo-biale.svg" alt="logo" />
+        </a>
 
         <div class="topBar w flex">
             <a class="topBar__phoneNumber flex"
