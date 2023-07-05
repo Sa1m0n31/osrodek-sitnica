@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+</head>
+<body>
+<div class="container">
+    <!-- MENU -->
+    <div class="menuDesktop">
+        <div class="menuDesktop__inner flex flex--column">
+            <div class="menuDesktop__inner__top">
+                <div class="menuDesktop__header flex">
+                    <span>
+                        Menu
+                    </span>
+
+                    <button class="menuDesktop__closeBtn"
+                            onclick="closeDesktopMenu()">
+                        &times;
+                    </button>
+                </div>
+
+                <a class="menuDesktop__item" href="#">
+                    Strona główna
+                </a>
+                <a class="menuDesktop__item" href="#">
+                    Wynajem domków
+                </a>
+                <a class="menuDesktop__item" href="#">
+                    Atrakcje ośrodka
+                </a>
+                <a class="menuDesktop__item" href="#">
+                    Cennik usług
+                </a>
+                <a class="menuDesktop__item" href="#">
+                    Oferta
+                </a>
+                <a class="menuDesktop__item" href="#">
+                    Wypożyczalnia sprzętu wodnego
+                </a>
+            </div>
+
+            <div class="menuDesktop__inner__bottom">
+                <div class="footer__socialMedia flex flex--start">
+                    Obserwuj nas na:
+                    <a class="footer__socialMedia__link"
+                       href="#">
+                        <img class="img" src="./img/facebook.svg" alt="facebook" />
+                    </a>
+                    <a class="footer__socialMedia__link"
+                       href="#">
+                        <img class="img" src="./img/instagram.svg" alt="instagram" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero hero--homepage">
+        <img class="hero__background" src="./img/sitnica-tlo.png" alt="osrodek-sitnica" />
+
+        <div class="topBar w flex">
+            <a class="topBar__phoneNumber flex"
+               href="tel:+48697099402">
+                <img class="icon" src="./img/telefon.svg" alt="telefon" />
+                tel. 697 099 402
+            </a>
+
+            <span class="topBar__hours block flex">
+                <img class="icon" src="./img/zegar.svg" alt="zegar" />
+                Pon. - Czw. 9:00 - 17:00, Pt. - Ndz. 9:00 - 23:00
+            </span>
+        </div>
+
+        <div class="topNav w flex">
+            <a class="topNav__logo"
+               href="#">
+                <img class="img" src="./img/logo-biale.svg" alt="logo" />
+            </a>
+
+            <button class="topNav__menu flex"
+                    onclick="openDesktopMenu()">
+                MENU
+                <img class="topNav__menu__img" src="./img/menu-biale.svg" alt="menu" />
+            </button>
+        </div>
+
+        <div class="hero__content">
+            <h1 class="hero__content__header">
+                Imprezowy raj w otoczeniu przyrody
+            </h1>
+            <h2 class="hero__content__text">
+                Ośrodek Wypoczynkowy w Sitnicy to idealne miejsce na wakacje, weekendy
+                i wszelkiego rodzaju imprezy. Nasza malownicza lokalizacja w sercu pięknej
+                przyrody oraz komfortowe pokoje sprawiają, że nasi goście czują się u nas
+                jak w domu.
+            </h2>
+
+            <a class="hero__content__btn center"
+               href="./domki.html">
+                Domki do wynajęcia
+            </a>
+        </div>
+    </div>
+
+    <div class="section w">
+        <div class="center flex--column section__headerWrapper">
+            <span class="section__header--before">
+                Ośrodek wypoczynkowy Sitnica
+            </span>
+            <h3 class="section__header">
+                Niezapomiane wakacje i wydarzenia.<br/>
+                Co znajdziesz w naszym ośrodku?
+            </h3>
+            <p class="section__text">
+                Cieszymy się, że odwiedzasz naszą stronę! Jesteśmy ośrodkiem wypoczynkowym
+                i organizatorem imprez, którzy z pasją tworzą wyjątkowe wakacje dla naszych
+                klientów. Oferujemy niezapomniane wrażenia z imprez oraz wypoczynek w pięknych
+                okolicznościach przyrody. W naszej ofercie znajdziesz również domki do wynajęcia,
+                które zapewnią Ci komfortowe i przytulne miejsce na wypoczynek.
+            </p>
+        </div>
+
+        <div class="offer">
+            <a class="offer__item" href="#">
+                <img class="img" src="./img/oferta-1.png" alt="oferta" />
+                <h4 class="offer__item__header center">
+                    Imprezy i koncerty
+                </h4>
+
+                <span class="offer__item__overlay center flex--column">
+                    <span class="offer__item__overlay__header">
+                        Imprezy i koncerty
+                    </span>
+                    <span class="offer__item__overlay__text">
+                        Oferujemy wynajem nowoczesnej i w pełni wyposażonej sali
+                        konferencyjnej. Sala wyposażona jest w najnowsze urządzenia
+                        multimedialne, klimatyzację oraz bezprzewodowe łącze internetowe.
+                    </span>
+                    <span class="offer__item__overlay__button center">
+                        Więcej informacji
+                    </span>
+                </span>
+            </a>
+
+            <a class="offer__item" href="#">
+                <img class="img" src="./img/oferta-6.png" alt="oferta" />
+                <h4 class="offer__item__header center">
+                    Imprezy i koncerty
+                </h4>
+
+                <span class="offer__item__overlay center flex--column">
+                    <span class="offer__item__overlay__header">
+                        Imprezy i koncerty
+                    </span>
+                    <span class="offer__item__overlay__text">
+                        Oferujemy wynajem nowoczesnej i w pełni wyposażonej sali
+                        konferencyjnej. Sala wyposażona jest w najnowsze urządzenia
+                        multimedialne, klimatyzację oraz bezprzewodowe łącze internetowe.
+                    </span>
+                    <span class="offer__item__overlay__button center">
+                        Więcej informacji
+                    </span>
+                </span>
+            </a>
+
+            <a class="offer__item" href="#">
+                <img class="img" src="./img/oferta-3.png" alt="oferta" />
+                <h4 class="offer__item__header center">
+                    Imprezy i koncerty
+                </h4>
+
+                <span class="offer__item__overlay center flex--column">
+                    <span class="offer__item__overlay__header">
+                        Imprezy i koncerty
+                    </span>
+                    <span class="offer__item__overlay__text">
+                        Oferujemy wynajem nowoczesnej i w pełni wyposażonej sali
+                        konferencyjnej. Sala wyposażona jest w najnowsze urządzenia
+                        multimedialne, klimatyzację oraz bezprzewodowe łącze internetowe.
+                    </span>
+                    <span class="offer__item__overlay__button center">
+                        Więcej informacji
+                    </span>
+                </span>
+            </a>
+
+            <a class="offer__item" href="#">
+                <img class="img" src="./img/oferta-4.png" alt="oferta" />
+                <h4 class="offer__item__header center">
+                    Imprezy i koncerty
+                </h4>
+
+                <span class="offer__item__overlay center flex--column">
+                    <span class="offer__item__overlay__header">
+                        Imprezy i koncerty
+                    </span>
+                    <span class="offer__item__overlay__text">
+                        Oferujemy wynajem nowoczesnej i w pełni wyposażonej sali
+                        konferencyjnej. Sala wyposażona jest w najnowsze urządzenia
+                        multimedialne, klimatyzację oraz bezprzewodowe łącze internetowe.
+                    </span>
+                    <span class="offer__item__overlay__button center">
+                        Więcej informacji
+                    </span>
+                </span>
+            </a>
+
+            <a class="offer__item" href="#">
+                <img class="img" src="./img/oferta-5.png" alt="oferta" />
+                <h4 class="offer__item__header center">
+                    Imprezy i koncerty
+                </h4>
+
+                <span class="offer__item__overlay center flex--column">
+                    <span class="offer__item__overlay__header">
+                        Imprezy i koncerty
+                    </span>
+                    <span class="offer__item__overlay__text">
+                        Oferujemy wynajem nowoczesnej i w pełni wyposażonej sali
+                        konferencyjnej. Sala wyposażona jest w najnowsze urządzenia
+                        multimedialne, klimatyzację oraz bezprzewodowe łącze internetowe.
+                    </span>
+                    <span class="offer__item__overlay__button center">
+                        Więcej informacji
+                    </span>
+                </span>
+            </a>
+
+            <a class="offer__item" href="#">
+                <img class="img" src="./img/oferta-6.png" alt="oferta" />
+                <h4 class="offer__item__header center">
+                    Imprezy i koncerty
+                </h4>
+
+                <span class="offer__item__overlay center flex--column">
+                    <span class="offer__item__overlay__header">
+                        Imprezy i koncerty
+                    </span>
+                    <span class="offer__item__overlay__text">
+                        Oferujemy wynajem nowoczesnej i w pełni wyposażonej sali
+                        konferencyjnej. Sala wyposażona jest w najnowsze urządzenia
+                        multimedialne, klimatyzację oraz bezprzewodowe łącze internetowe.
+                    </span>
+                    <span class="offer__item__overlay__button center">
+                        Więcej informacji
+                    </span>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="section w">
+        <div class="center flex--column section__headerWrapper">
+            <span class="section__header--before">
+                Ośrodek wypoczynkowy Sitnica
+            </span>
+            <h3 class="section__header">
+                Łatwo znajdziesz<br/>
+                wszystkie nasze atrakcje
+            </h3>
+            <p class="section__text">
+                Skorzystaj z interaktywnej mapy naszego ośrodka, aby namierzyć wszystkie atrakcje,
+                które są u nas dostępne - teraz bez problemu do nich trafisz.
+            </p>
+        </div>
+
+        <figure class="interactiveMap">
+            <img class="img" src="./img/mapa-osrodka.png" alt="mapa" />
+        </figure>
+    </div>
+
+    <div class="section w">
+        <div class="center flex--column section__headerWrapper">
+            <span class="section__header--before">
+                Gdzie się znajdujemy
+            </span>
+            <h3 class="section__header">
+                Jak do nas trafić?
+            </h3>
+            <p class="section__text section__text--address">
+                Ośrodek Wypoczynkowy Sitnica<br/>
+                Sitnica 30, 87-415 Rogowo<br/>
+                Telefon: 508 508 178
+            </p>
+        </div>
+
+        <figure class="interactiveMap">
+
+        </figure>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__inner w flex">
+            <div class="footer__col">
+                <a class="footer__logo" href="#">
+                    <img class="img" src="./img/logo-biale.svg" alt="logo" />
+                </a>
+                <p class="footer__text">
+                    Nasz ośrodek wypoczynkowy oferuje komfortowe domki letniskowe, basen odkryty,
+                    plac zabaw dla dzieci, boisko sportowe oraz organizację letnich imprez i koncertów.
+                </p>
+                <div class="footer__socialMedia flex flex--start">
+                    Obserwuj nas na:
+                    <a class="footer__socialMedia__link"
+                       href="#">
+                        <img class="img" src="./img/facebook.svg" alt="facebook" />
+                    </a>
+                    <a class="footer__socialMedia__link"
+                       href="#">
+                        <img class="img" src="./img/instagram.svg" alt="instagram" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h5 class="footer__header">
+                    Oferta ośrodka
+                </h5>
+                <a class="footer__link" href="#">
+                    Wynajem domków letniskowych
+                </a>
+                <a class="footer__link" href="#">
+                    Wynajem domków letniskowych
+                </a>
+                <a class="footer__link" href="#">
+                    Wynajem domków letniskowych
+                </a>
+                <a class="footer__link" href="#">
+                    Wynajem domków letniskowych
+                </a>
+            </div>
+
+            <div class="footer__col">
+                <h5 class="footer__header">
+                    Mapa strony
+                </h5>
+                <a class="footer__link" href="#">
+                    Strona główna
+                </a>
+                <a class="footer__link" href="#">
+                    Atrakcje
+                </a>
+                <a class="footer__link" href="#">
+                    Cennik
+                </a>
+                <a class="footer__link" href="#">
+                    Domki do wynajęcia
+                </a>
+            </div>
+
+            <div class="footer__col">
+                <h5 class="footer__header">
+                    Dane kontaktowe
+                </h5>
+                <p class="footer__text footer__text--noMarginTop">
+                    <span class="bold">
+                        Ośrodek wypoczynkowy w Sitnicy
+                    </span>
+                    <span>
+                        Sitnica 30, 87-515 Rogowo
+                    </span>
+                    <span class="m-10">
+                        tel. 508 508 178
+                    </span>
+                    <span>
+                        mail: kontakt@sitnica.pl
+                    </span>
+
+                    <span class="bold m-10">
+                        PKO Bank Polski
+                    </span>
+                    <span>
+                        29 1111 0000 4444 9866 1233 1111
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom__inner flex w">
+                <span>
+                    &copy; Ośrodek Wypoczynkowy Sitnica
+                </span>
+                <span>
+                    Wykonanie:
+                    <a href="https://skylo.pl"
+                       rel="noreferrer"
+                       target="_blank">
+                        Skylo.pl - Software House
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

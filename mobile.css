@@ -1,0 +1,25 @@
+@media(max-width: 1400px) {
+
+}
+
+@media(max-width: 1200px) {
+    .menuDesktop__inner {
+        width: 350px;
+    }
+
+    .menuDesktop__item {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 996px) {
+
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 576px) {
+
+}
