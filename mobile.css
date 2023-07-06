@@ -58,6 +58,7 @@
         width: 350px;
     }
 
+    .btn--water .desktop,
     .singleRoom__subheader__btn .desktop {
         display: none;
     }
@@ -167,6 +168,31 @@
 @media(max-width: 768px) {
     .w {
         width: 90%;
+    }
+
+    .flex--images {
+        flex-direction: column;
+    }
+
+    .img--flex {
+        width: 100%;
+    }
+
+    .img--flex:first-child {
+        margin: 0 0 20px;
+    }
+
+    .water__header {
+        font-size: 16px;
+    }
+
+    .btn--water,
+    .water__text {
+        font-size: 14px;
+    }
+
+    .attractions {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .singleRoom__subheader__text {
