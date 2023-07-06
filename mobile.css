@@ -1,5 +1,5 @@
 @media(max-width: 1400px) {
-    .hero {
+    .hero--homepage {
         height: auto;
         min-height: 100px;
         padding-bottom: 120px;
@@ -58,6 +58,58 @@
         width: 350px;
     }
 
+    .singleRoom__subheader__btn .desktop {
+        display: none;
+    }
+
+    .singleRoom__details__description__text {
+        font-size: 14px;
+    }
+
+    .singleRoom__details__description__btn {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .singleRoom__subheader {
+        margin-top: 10px;
+    }
+
+    .singleRoom__subheader__text {
+        font-size: 14px;
+    }
+
+    .singleRoom__subheader__btn {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .pageHeader {
+        font-size: 24px;
+    }
+
+    .rooms {
+        grid-gap: 20px;
+    }
+
+    .rooms__item__content {
+        height: 130px;
+    }
+
+    .rooms__item__content__header {
+        font-size: 21px;
+    }
+
+    .rooms__item__content__text {
+        font-size: 12px;
+        margin: 10px 0 15px;
+    }
+
+    .rooms__item__content__btn {
+        font-size: 12px;
+        width: 160px;
+    }
+
     .menuDesktop__item {
         font-size: 15px;
     }
@@ -107,12 +159,57 @@
 }
 
 @media(max-width: 996px) {
-
+    .pageHeader--offer {
+        max-width: 450px;
+    }
 }
 
 @media(max-width: 768px) {
+    .w {
+        width: 90%;
+    }
+
+    .singleRoom__subheader__text {
+        max-width: 100%;
+    }
+
+    .pricing__disclaimer {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .pricing {
+        max-width: 100%;
+    }
+
     .section {
         margin: 20px auto;
+    }
+
+    .singleRoom__subheader__btn {
+        display: none;
+    }
+
+    .singleRoom__subheader__text {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .singleRoom__gallery,
+    .singleRoom__details {
+        flex-direction: column;
+    }
+
+    .singleRoom__gallery > *,
+    .singleRoom__details > * {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .singleRoom__gallery__small {
+        grid-gap: 10px;
+        margin-top: -5px;
+        margin-bottom: -15px;
     }
 
     .offer {
@@ -224,6 +321,10 @@
         color: #fff;
     }
 
+    .hero--page .topBarMobile__item {
+        background: var(--primary);
+    }
+
     .topBarMobile__item {
         background: rgba(255, 255, 255, .4);
         height: 70px;
@@ -256,6 +357,10 @@
         margin: 30px auto 60px;
     }
 
+    .hero--page .topBarMobileLogo {
+        margin: 20px auto 30px;
+    }
+
     .menuDesktop__inner {
         width: 90%;
         padding: 20px;
@@ -275,6 +380,48 @@
 
     .menuDesktop__item {
         font-size: 14px;
+    }
+
+    .pageHeader {
+        font-size: 21px;
+    }
+
+    .rooms {
+        grid-template-columns: 1fr;
+    }
+
+    .rooms__item__content {
+        height: 100px;
+    }
+
+    .rooms__item__content__header {
+        font-size: 16px;
+    }
+
+    .rooms__item__content__btn {
+        display: none;
+    }
+
+    .form__header {
+        font-size: 21px;
+    }
+
+    .label,
+    .form__subheader {
+        font-size: 12px;
+    }
+
+    .btn--submit {
+        height: 45px;
+    }
+
+    .input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .textarea {
+        height: 120px;
     }
 }
 

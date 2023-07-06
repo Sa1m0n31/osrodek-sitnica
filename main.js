@@ -35,5 +35,68 @@ const closeDesktopMenu = () => {
 document.addEventListener('keyup', (e) => {
     if(e.key === 'Escape') {
         closeDesktopMenu();
+
+        if(galleryWrapper) {
+            closeGallery();
+        }
     }
 })
+
+// Gallery
+const galleryWrapper = document.querySelector('.gallery');
+const galleryPlaceholder = document.querySelector('.gallery__image>.img');
+const galleryImages = Array.from(document.querySelectorAll('.galleryImage')).map((item) => {
+   return item.getAttribute('src');
+});
+let currentGallerySlide = 0;
+let galleryLength = galleryImages.length;
+
+const openGallery = (n) => {
+    galleryWrapper.style.zIndex = '10000';
+    galleryWrapper.style.opacity = '1';
+
+    changeImage(n);
+}
+
+const changeImage = (n) => {
+    galleryPlaceholder.style.opacity = '0';
+    setTimeout(() => {
+        galleryPlaceholder.setAttribute('src', galleryImages[n]);
+
+        setTimeout(() => {
+            galleryPlaceholder.style.opacity = '1';
+        }, 200);
+    }, 200);
+
+    currentGallerySlide = n;
+}
+
+const galleryPrev = () => {
+    if(currentGallerySlide === 0) {
+        changeImage(galleryLength-1);
+    }
+    else {
+        changeImage(currentGallerySlide-1);
+    }
+}
+
+const galleryNext = () => {
+    if(currentGallerySlide === galleryLength-1) {
+        changeImage(0);
+    }
+    else {
+        changeImage(currentGallerySlide+1);
+    }
+}
+
+const closeGallery = () => {
+    galleryWrapper.style.opacity = '0';
+    setTimeout(() => {
+        galleryWrapper.style.zIndex = '-10000';
+    }, 300);
+}
+
+// Pricing enlarge
+const enlargePricing = () => {
+
+}

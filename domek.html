@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./mobile.css" />
+</head>
+<body>
+<div class="container">
+  <!-- MENU -->
+  <div class="menuDesktop">
+    <div class="menuDesktop__inner flex flex--column">
+      <div class="menuDesktop__inner__top">
+        <div class="menuDesktop__header flex">
+                    <span>
+                        Menu
+                    </span>
+
+          <button class="menuDesktop__closeBtn"
+                  onclick="closeDesktopMenu()">
+            &times;
+          </button>
+        </div>
+
+        <a class="menuDesktop__item" href="#">
+          Strona główna
+        </a>
+        <a class="menuDesktop__item" href="#">
+          Wynajem domków
+        </a>
+        <a class="menuDesktop__item" href="#">
+          Atrakcje ośrodka
+        </a>
+        <a class="menuDesktop__item" href="#">
+          Cennik usług
+        </a>
+        <a class="menuDesktop__item" href="#">
+          Oferta
+        </a>
+        <a class="menuDesktop__item" href="#">
+          Wypożyczalnia sprzętu wodnego
+        </a>
+      </div>
+
+      <div class="menuDesktop__inner__bottom">
+        <div class="footer__socialMedia flex flex--start">
+          Obserwuj nas na:
+          <a class="footer__socialMedia__link"
+             href="#">
+            <img class="img" src="./img/facebook.svg" alt="facebook" />
+          </a>
+          <a class="footer__socialMedia__link"
+             href="#">
+            <img class="img" src="./img/instagram.svg" alt="instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero hero--page">
+    <div class="topBarMobile">
+      <a class="topBarMobile__item" href="tel:+48123123123">
+        <img class="img" src="./img/telefon.svg" alt="telefon" />
+        <span class="topBarMobile__item__text">
+                    Zadzwoń
+                </span>
+      </a>
+      <div class="topBarMobile__item">
+        <img class="img" src="./img/zegar.svg" alt="zegar" />
+        <span class="topBarMobile__item__text">
+                    Pon. - Czw. 9:00 - 17:00<br/>
+                    Pt. - Ndz. 9:00 - 23:00
+                </span>
+      </div>
+      <button class="topBarMobile__item" onclick="openDesktopMenu()">
+        <img class="img" src="./img/menu-biale.svg" alt="menu" />
+        <span class="topBarMobile__item__text">
+                    Menu
+                </span>
+      </button>
+    </div>
+
+    <a class="topBarMobileLogo" href="#">
+      <img class="img" src="./img/logo-color.svg" alt="logo" />
+    </a>
+
+    <div class="topBar w flex">
+      <a class="topBar__phoneNumber flex"
+         href="tel:+48697099402">
+        <img class="icon icon--color" src="./img/telefon.svg" alt="telefon" />
+        tel. 697 099 402
+      </a>
+
+      <span class="topBar__hours block flex">
+                <img class="icon icon--color" src="./img/zegar.svg" alt="zegar" />
+                Pon. - Czw. 9:00 - 17:00, Pt. - Ndz. 9:00 - 23:00
+            </span>
+    </div>
+
+    <div class="topNav w flex">
+      <a class="topNav__logo"
+         href="#">
+        <img class="img" src="./img/logo-color.svg" alt="logo" />
+      </a>
+
+      <button class="topNav__menu flex"
+              onclick="openDesktopMenu()">
+        MENU
+        <img class="topNav__menu__img" src="./img/menu-color.svg" alt="menu" />
+      </button>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="gallery">
+    <button class="btn--gallery btn--galleryClose" onclick="closeGallery()">
+      &times;
+    </button>
+
+    <button class="btn--gallery" onclick="galleryPrev()">
+      <img class="img" src="./img/prev.svg" alt="poprzedni" />
+    </button>
+
+    <figure class="gallery__image">
+      <img class="img" src="./img/domek-prostokat.png" alt="zdjecie" />
+    </figure>
+
+    <button class="btn--gallery btn--gallery--next" onclick="galleryNext()">
+      <img class="img" src="./img/prev.svg" alt="poprzedni" />
+    </button>
+  </div>
+
+  <!-- PAGE -->
+  <div class="section section--page w">
+    <h1 class="pageHeader">
+      Domek letniskowy kategoria 1
+    </h1>
+    <div class="singleRoom__subheader flex">
+      <h2 class="singleRoom__subheader__text">
+        Domek trzyosobowy &middot; Dwa łóżka &middot; Klimatyzacja
+      </h2>
+      <a href="tel:+48123123123" class="singleRoom__subheader__btn center">
+        <img class="icon" src="./img/telefon.svg" alt="telefon" />
+        <span class="desktop">REZERWACJA POD NR TEL.</span> <span>123 123 123</span>
+      </a>
+    </div>
+
+    <div class="singleRoom__gallery flex">
+      <div class="singleRoom__gallery__big">
+        <button class="singleRoom__gallery__item" onclick="openGallery(0)">
+          <img class="img galleryImage" src="./img/domek-prostokat.png" alt="domek" />
+        </button>
+      </div>
+      <div class="singleRoom__gallery__small">
+        <button class="singleRoom__gallery__item" onclick="openGallery(1)">
+          <img class="img galleryImage" src="./img/domek-kwadrat-1.png" alt="domek" />
+        </button>
+        <button class="singleRoom__gallery__item" onclick="openGallery(2)">
+          <img class="img galleryImage" src="./img/domek-kwadrat-2.png" alt="domek" />
+        </button>
+        <button class="singleRoom__gallery__item" onclick="openGallery(3)">
+          <img class="img galleryImage" src="./img/domek-kwadrat-1.png" alt="domek" />
+        </button>
+        <button class="singleRoom__gallery__item" onclick="openGallery(4)">
+          <img class="img galleryImage" src="./img/domek-kwadrat-2.png" alt="domek" />
+        </button>
+      </div>
+    </div>
+
+    <div class="singleRoom__details flex">
+      <div class="singleRoom__details__description">
+        <h3 class="singleRoom__details__description__header">
+          Opis domku
+        </h3>
+        <div class="singleRoom__details__description__text">
+          Nasz domek letniskowy to doskonałe rozwiązanie dla osób, które chcą spędzić wakacje w przytulnym i komfortowym miejscu. Domek mieści się wśród pięknych krajobrazów i zapewnia ciszę oraz spokój, a jednocześnie jest w pełni wyposażony i zapewnia wysoki standard pobytu.
+          Wnętrze domku składa się z dwóch sypialni, w pełni wyposażonej kuchni z jadalnią oraz łazienki z prysznicem. Do dyspozycji gości pozostaje także taras z meblami ogrodowymi i grill, co pozwala na relaks na świeżym powietrzu i spożywanie posiłków w otoczeniu natury.
+        </div>
+        <a href="tel:+48123123123" class="singleRoom__details__description__btn center">
+          Kontakt w sprawie rezerwacji
+        </a>
+      </div>
+
+      <div class="singleRoom__details__calendar">
+        <h4 class="singleRoom__details__description__header">
+          Kalendarz
+        </h4>
+        <div class="calendar">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner w flex">
+      <div class="footer__col">
+        <a class="footer__logo" href="#">
+          <img class="img" src="./img/logo-biale.svg" alt="logo" />
+        </a>
+        <p class="footer__text">
+          Nasz ośrodek wypoczynkowy oferuje komfortowe domki letniskowe, basen odkryty,
+          plac zabaw dla dzieci, boisko sportowe oraz organizację letnich imprez i koncertów.
+        </p>
+        <div class="footer__socialMedia flex flex--start">
+          Obserwuj nas na:
+          <a class="footer__socialMedia__link"
+             href="#">
+            <img class="img" src="./img/facebook.svg" alt="facebook" />
+          </a>
+          <a class="footer__socialMedia__link"
+             href="#">
+            <img class="img" src="./img/instagram.svg" alt="instagram" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h5 class="footer__header">
+          Oferta ośrodka
+        </h5>
+        <a class="footer__link" href="#">
+          Wynajem domków letniskowych
+        </a>
+        <a class="footer__link" href="#">
+          Wynajem domków letniskowych
+        </a>
+        <a class="footer__link" href="#">
+          Wynajem domków letniskowych
+        </a>
+        <a class="footer__link" href="#">
+          Wynajem domków letniskowych
+        </a>
+      </div>
+
+      <div class="footer__col">
+        <h5 class="footer__header">
+          Mapa strony
+        </h5>
+        <a class="footer__link" href="#">
+          Strona główna
+        </a>
+        <a class="footer__link" href="#">
+          Atrakcje
+        </a>
+        <a class="footer__link" href="#">
+          Cennik
+        </a>
+        <a class="footer__link" href="#">
+          Domki do wynajęcia
+        </a>
+      </div>
+
+      <div class="footer__col">
+        <h5 class="footer__header">
+          Dane kontaktowe
+        </h5>
+        <p class="footer__text footer__text--noMarginTop">
+                    <span class="bold">
+                        Ośrodek wypoczynkowy w Sitnicy
+                    </span>
+          <span>
+                        Sitnica 30, 87-515 Rogowo
+                    </span>
+          <span class="m-10">
+                        tel. 508 508 178
+                    </span>
+          <span>
+                        mail: kontakt@sitnica.pl
+                    </span>
+
+          <span class="bold m-10">
+                        PKO Bank Polski
+                    </span>
+          <span>
+                        29 1111 0000 4444 9866 1233 1111
+                    </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom__inner flex w">
+                <span>
+                    &copy; Ośrodek Wypoczynkowy Sitnica
+                </span>
+        <span>
+                    Wykonanie:
+                    <a href="https://skylo.pl"
+                       rel="noreferrer"
+                       target="_blank">
+                        Skylo.pl - Software House
+                    </a>
+                </span>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
